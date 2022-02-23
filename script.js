@@ -1,5 +1,3 @@
-console.log("Devs always Inspect the code ;)\n\nHehe")
-
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 window.scroll({
@@ -7,14 +5,6 @@ window.scroll({
     left: 0, 
     behavior: 'smooth'
   });
-
-  if (history.scrollRestoration) {
-    history.scrollRestoration = 'manual';
-} else {
-    window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
-    }
-}
 
 var cursor = document.getElementById("cursor");
 document.body.addEventListener("mousemove", function(e) {

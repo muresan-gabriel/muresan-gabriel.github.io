@@ -209,48 +209,6 @@ a {
 
 /* END MAIN SECTION */
 
-/* START NAV SECTION */
-
-/*
-.nav-section {
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0px;
-}
-
-.nav-text {
-    color: #121619;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    font-size: 30vh;
-    margin: 0;
-    transition: color 0.5s ease;
-}
-
-.nav-text:hover {
-    color: #ede9e6;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ede9e6;
-}
-
-.portfolio {
-    text-align: left;
-}
-
-.about-me {
-    text-align: right;
-    margin-left: 26.3%;
-}
-
-.contact {
-    text-align: left;
-}
-*/
-
-/* END NAV SECTION */
-
 /* START FOOTER SECTION */
 
 .footer-section {
