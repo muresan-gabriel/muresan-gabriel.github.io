@@ -109,10 +109,13 @@ a {
     text-align: center;
     font-size: 3vh;
     cursor: none;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .info {
     font-size: 1.5vh;
+    +
 }
 
 .orange-text {
@@ -231,6 +234,7 @@ a {
     width: 100%;
     top: 0;
     left: 0;
+    margin-bottom: 15px;
 }
 
 .email {
@@ -243,10 +247,16 @@ a {
 
 .icon {
     margin-top: 75px;
-    margin-right: 15px;
     left: 0;
-    width: 25px;
+    width: 50px;
     filter: drop-shadow(0);
+    box-sizing: border-box;
+    margin-right: 15px;
+    margin-left: 19px;
+}
+
+.social-icons {
+    margin-top: 25px;
 }
 
 /* END FOOTER SECTION */
