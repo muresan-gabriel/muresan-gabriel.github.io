@@ -75,6 +75,25 @@ a {
   transition: 0.5s;
 }
 
+#postSectionScroll {
+  transition: 1s;
+}
+.about-link {
+  font-size: 2.5rem;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  padding-bottom: 0.5px;
+}
+
+.about-link:hover {
+  color: #c2ff1b;
+  border-bottom: 1px solid #c2ff1b;
+}
+
+h6 {
+  transform: rotate(-90deg);
+  animation: blinker 1s linear infinite;
+}
+
 a:hover {
   color: #c2ff1b;
 }
@@ -102,6 +121,8 @@ body {
 
 .main-display-font {
   font-weight: 400;
+  overflow: visible;
+  transition: 1.5s;
 }
 .typewrite {
   font-size: 2.5rem;
@@ -172,6 +193,9 @@ ul {
 .asset-post:hover > .asset-card-bg {
   filter: saturate(1);
 }
+.asset-post:hover > .card-title {
+  display: none;
+}
 
 .bg-dark {
   background-color: #0b0b0b;
@@ -180,6 +204,16 @@ ul {
 
 .explore-section {
   padding: 0;
+}
+
+.explore-section-desktop {
+  width: 15rem;
+  height: 15rem;
+}
+
+.card-img {
+  width: 20rem;
+  height: 20rem;
 }
 .work-section-heading {
   font-size: 72px;
@@ -194,6 +228,7 @@ ul {
   color: white;
   border-color: #c2ff1b;
   font-weight: 600;
+  margin-bottom: 25px;
 }
 
 .btn-outline-primary:active,
@@ -202,6 +237,14 @@ ul {
   color: #1b1b1b;
   border-color: #c2ff1b;
   background-color: #c2ff1b;
+}
+
+#aboutScrollContent {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.hidden {
+  opacity: 0 !important;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -336,6 +379,10 @@ ul {
   .social-icon {
     transform: translateY(10rem);
   }
+}
+
+.active-link {
+  color: #c2ff1b;
 }
 
 /* KEYFRAMES */

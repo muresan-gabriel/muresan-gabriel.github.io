@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel Mureșan - Portfolio</title>
+    <link rel="icon" href="src/images/logo-03.svg" sizes="any" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="src/script.js" defer></script>
+    <script type="module" src="src/portfolio-scroll.js" defer></script>
+  </head>
+    <div id="desktopContainer" class="container-fluid home desktop row row-cols-1 row-cols-lg-3 g-4">
+      <div class="col navigator-bar d-flex align-items-center"><h6>Scroll</h6></div>
+      <div class="col main-content-home" id="mainContentHome">
+        <!-- POST CONTAINER -->
+        <div class="post-section d-flex justify-content-center align-items-center row" id="postSectionScroll">
+          <div class="explore-section d-flex justify-content-center align-items-center container-fluid row row-cols-1 g-4">
+                    <!-- POST IN COLUMN -->
+              <div class="col d-flex align-items-center asset-column">
+                  <div class="card asset-post bg-dark text-white">
+                  <img id="workImage"
+                      src="src/images/dev-lib-preview.png"
+                      class="card-img asset-card-bg"
+                      alt="dev.lib"
+                  />
+                  <div
+                      class="d-flex justify-content-center align-items-center card-img-overlay text-asset-container"
+                  >
+                      <h5 id="postName" class="card-title asset-name">dev.lib</h5>
+                      <a href="https://devlibproject.netlify.app/" target="_blank" class="stretched-link" 
+                      id="stretchedLink"></a>
+                  </div>
+                  </div>
+              </div>
+                  <!-- POST IN COLUMN -->
+      </div></div></div>
+      <div class="col navigator">
+        <div class="row logo-container"><a class="logo" href="index.html"><img src="src/images/logo-03.svg"></a></div>
+        <div class="row nav-bar-desktop-container">
+          <ul>
+            <li class="nav-desktop-item">
+              <a href="portfolio.html">PORTFOLIO</a>
+            </li>
+            <li class="nav-desktop-item"><a classs="active-link" href="about.html">ABOUT ME</a></li>
+            <li class="nav-desktop-item"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="row social-icons-container">
+
+        <div class="col">
+            <a class=icon-href" href="https://github.com/muresan-gabriel" target="_blank">
+                <img class="social-icon" src="/src/icons/github.png"/>
+            </a>
+        </div>
+
+        <div class="col">
+            <a class="icon-href" href="https://www.instagram.com/muresan__gabriel/" target="_blank">
+              <img class="social-icon" src="/src/icons/instagram.png"/>
+            </a>
+        </div>
+        <div class="col">
+            <a class=icon-href" href="https://www.behance.net/muresangabriel" target="_blank">
+                <img class="social-icon" src="/src/icons/behance.png"/>
+            </a>
+        </div>
+        <div class="col"><a class=icon-href" href="https://dribbble.com/muresangabriel" target="_blank"
+            ><img class="social-icon" src="/src/icons/dribbble.png"
+          /></a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
