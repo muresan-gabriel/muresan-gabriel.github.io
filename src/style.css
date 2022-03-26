@@ -35,6 +35,19 @@
   font-weight: 900;
 }
 
+.navbar-toggler {
+  color: white;
+}
+
+.navbar-dark {
+  border: none;
+  outline: none;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -42,7 +55,6 @@
   color: #e4e4e4;
   font-size: 24px;
   font-weight: 100;
-  overflow: hidden;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -111,6 +123,27 @@ body {
   .navigator-bar {
     display: none;
   }
+
+  .ham-menu-container {
+    display: none;
+  }
+
+  .nav-bar-desktop-container {
+    display: none;
+  }
+
+  .social-icons-container {
+    display: none;
+  }
+  .main-display-font {
+    display: none;
+  }
+
+  .mobile-display-font {
+    text-align: center;
+    font-size: 24px;
+    transform: translateX(5%);
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -118,32 +151,48 @@ body {
   .navigator-bar {
     display: none;
   }
+
+  .ham-menu-container {
+    display: none;
+  }
+
+  .nav-bar-desktop-container {
+    display: none;
+  }
+
+  .social-icons-container {
+    display: none;
+  }
+  .main-display-font {
+    display: none;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .ham-menu-container {
+    display: none;
+  }
+
+  .nav-bar-desktop-container {
+    display: none;
+  }
+  .social-icons-container {
+    display: none;
+  }
+  .main-display-font {
+    display: none;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  * {
-    cursor: none;
+  .mobile-display.font {
+    display: none;
   }
 
-  .cursor {
-    position: fixed;
-    border-radius: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    pointer-events: none;
-    left: -100px;
-    top: 50%;
-    mix-blend-mode: difference;
-    background-color: white;
-    z-index: 10000;
-    border: 2px solid white;
-    height: 30px;
-    width: 30px;
-    transition: all 300ms ease-out;
+  * {
+    overflow: hidden;
   }
   .navbar {
     display: none;
@@ -162,6 +211,11 @@ body {
   .col {
     height: 100vh;
   }
+
+  .typewrite {
+    font-size: 2.5rem;
+  }
+
   .main-content-home {
     display: flex;
     width: 49.3333%;
