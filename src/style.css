@@ -39,12 +39,7 @@
   color: white;
 }
 
-.navbar-dark {
-  border: none;
-  outline: none;
-}
-
-.navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: white;
 }
 
@@ -100,10 +95,9 @@ body {
   animation: blinker 1s linear infinite;
 }
 
-.nav-item {
-  text-align: center;
+.logo {
+  width: 45%;
 }
-
 /* HOMEPAGE */
 
 .main-display-font {
@@ -118,31 +112,108 @@ body {
   font-weight: 400;
 }
 
+.nav-link {
+  font-size: 16px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.main-heading-mobile {
+  margin-bottom: 45px;
+}
+
+.mobile-heading {
+  font-size: 21px;
+}
+
+.ham-menu {
+  filter: invert(1);
+}
+
+#offcanvasRightLabel {
+  color: #0b0b0b;
+  font-weight: 600;
+}
+
+.ham-menu-container {
+  margin-bottom: 25px;
+}
+
+.nav-item {
+  color: #0b0b0b;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.asset-card-bg {
+  filter: saturate(0) brightness(0.3);
+  transition: 0.3s;
+  border-radius: 25px;
+}
+
+.asset-column {
+  margin: 0;
+}
+
+.asset-post:hover > .asset-card-bg {
+  filter: saturate(1);
+}
+
+.bg-dark {
+  background-color: #0b0b0b;
+  border-radius: 25px;
+}
+
+.explore-section {
+  padding: 0;
+}
+.work-section-heading {
+  font-size: 72px;
+  transform: translateY(3rem);
+  text-align: left;
+  margin-bottom: 0;
+  z-index: 25;
+}
+
+.btn-outline-primary {
+  margin-top: 25px;
+  color: white;
+  border-color: #c2ff1b;
+  font-weight: 600;
+}
+
+.btn-outline-primary:active,
+.btn-outline-primary:focus,
+.btn-outline-primary:hover {
+  color: #1b1b1b;
+  border-color: #c2ff1b;
+  background-color: #c2ff1b;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .navigator-bar {
     display: none;
   }
-
-  .ham-menu-container {
+  .desktop {
     display: none;
   }
-
-  .nav-bar-desktop-container {
-    display: none;
-  }
-
-  .social-icons-container {
-    display: none;
-  }
-  .main-display-font {
-    display: none;
-  }
-
-  .mobile-display-font {
-    text-align: center;
-    font-size: 24px;
-    transform: translateX(5%);
+  .wrap {
+    font-size: 21px;
   }
 }
 
@@ -151,46 +222,20 @@ body {
   .navigator-bar {
     display: none;
   }
-
-  .ham-menu-container {
-    display: none;
-  }
-
-  .nav-bar-desktop-container {
-    display: none;
-  }
-
-  .social-icons-container {
-    display: none;
-  }
-  .main-display-font {
+  .desktop {
     display: none;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .ham-menu-container {
-    display: none;
-  }
-
-  .nav-bar-desktop-container {
-    display: none;
-  }
-  .social-icons-container {
-    display: none;
-  }
-  .main-display-font {
-    display: none;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .mobile-display.font {
-    display: none;
+  .navbar {
+    display: flex;
   }
-
   * {
     overflow: hidden;
   }
@@ -204,18 +249,10 @@ body {
   .social-icon {
     height: 30px;
   }
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
   .col {
     height: 100vh;
   }
-
-  .typewrite {
-    font-size: 2.5rem;
-  }
-
   .main-content-home {
     display: flex;
     width: 49.3333%;
@@ -228,9 +265,60 @@ body {
     width: 17.33%;
   }
 
-  .ham-menu-container {
+  .logo-container {
     display: flex;
     height: 33.3333%;
+    align-items: flex-start;
+    justify-content: right;
+    padding-top: 25px;
+  }
+  .nav-bar-desktop-container {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    height: 33.3333%;
+  }
+  .social-icons-container {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 25px;
+  }
+
+  .social-icon {
+    transform: translateY(10rem);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+  }
+  .col {
+    height: 100vh;
+  }
+  .main-content-home {
+    display: flex;
+    width: 49.3333%;
+    transform: translateX(-40%);
+    justify-content: left;
+    align-items: center;
+  }
+
+  .navigator {
+    width: 17.33%;
+  }
+
+  .logo-container {
+    display: flex;
+    height: 33.3333%;
+    align-items: flex-start;
+    justify-content: right;
+    padding-top: 25px;
   }
   .nav-bar-desktop-container {
     display: flex;

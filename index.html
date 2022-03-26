@@ -24,52 +24,72 @@
 
   <body>
     <!-- MOBILE NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="/src/images/logo.svg"></a>
-        <button
-          class="navbar-toggler shadow-none"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-right navbar-collapse" id="navbarText">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link navbar-link-devlib"
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navbar-link-devlib" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navbar-link-devlib" href="portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link navbar-link-devlib" href="portfolio.html"
-                >Contact</a
-              >
-            </li>
-          </ul>
+    <div class="container mobile col">
+        <div class="row ham-menu-container">
+        <button class="btn shadow-none align-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="ham-menu" src="src/images/ham-menu.png"></button>
         </div>
-      </div>
-    </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul>
+                <li><a class="nav-item" href="index.html">Home</a></li>
+                <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-item" href="about.html">About me</a></li>
+                <li><a class="nav-item" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row"><h1 class="mobile-heading main-heading-mobile center">Gabriel Mureșan</h1></div>
+        <div class="row"><h1 class="mobile-heading center">I'm a</h1></div>
+        <div class="row"><h1 class="mobile-heading center">
+            <span
+              class="mobile-heading typewrite"
+              data-period="2000"
+              data-type='[ "front-end developer", "self-taught graphic designer", "computer science student" ]'
+            ></span
+            >
+            <span class="wrap mobile-heading"></span>
+          </h1></div>
+          <div class="row work-container-mobile">
+              <h1 class="work-section-heading mobile-heading center">Work</h1>
+          </div>
+          <!-- POST CONTAINER -->
+          <div class=" d-flex justify-content-center row">
+            <div class="explore-section d-flex justify-content-center container-fluid row row-cols-1 g-4">
+                      <!-- POST IN COLUMN -->
+                <div class="col asset-column">
+                    <div class="card asset-post bg-dark text-white">
+                    <img
+                        src="src/images/dev-lib-preview.png"
+                        class="card-img asset-card-bg"
+                        alt="dev.lib"
+                    />
+                    <div
+                        class="d-flex justify-content-center align-items-center card-img-overlay text-asset-container"
+                    >
+                        <h5 class="card-title asset-name">dev.lib</h5>
+                        <a href="https://devlibproject.netlify.app/" target="_blank" class="stretched-link"></a>
+                    </div>
+                    </div>
+                </div>
+                    <!-- POST IN COLUMN -->
 
-    <div class="container-fluid home row row-cols-1 row-cols-lg-3 g-4">
+            </div>
+          </div>
+          <div class="d-flex justify-content-center container-fluid g-4">
+
+            <div class="row"><button class="btn btn-outline-primary shadow-none">Portfolio</button></div>
+
+          </div>
+    </div>
+
+
+<!-- DESKTOP -->
+    <div class="container-fluid home desktop row row-cols-1 row-cols-lg-3 g-4">
       <div class="col navigator-bar"></div>
       <div class="col main-content-home">
-        <h1 class="mobile-display-font">Hello! I'm Gabriel. I'm a self-taught graphic designer and a computer science student.</h1>
         <h1 class="main-display-font">
           Hello! I'm Gabriel.<br />
           I'm a
@@ -83,7 +103,7 @@
         </h1>
       </div>
       <div class="col navigator">
-        <div class="row ham-menu-container">a</div>
+        <div class="row logo-container"><a class="logo" href="index.html"><img src="src/images/logo-03.svg"></a></div>
         <div class="row nav-bar-desktop-container">
           <ul>
             <li class="nav-desktop-item">
