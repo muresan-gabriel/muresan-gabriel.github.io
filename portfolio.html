@@ -23,7 +23,28 @@
     <script type="module" src="src/portfolio-scroll.js" defer></script>
   </head>
   <body>
+            <!-- MOBILE NAVBAR -->
+            <div class="container mobile col">
+              <div class="row ham-menu-container">
+              <button class="btn shadow-none align-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="ham-menu" src="src/images/ham-menu.png"></button>
+              </div>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul>
+                      <li><a class="nav-item" href="index.html">Home</a></li>
+                      <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
+                      <li><a class="nav-item" href="about.html">About me</a></li>
+                      <li><a class="nav-item" href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row"><h1 class="mobile-heading main-heading-mobile center">Mobile Version / Responsiveness Currently Under Development. <br>While a website should always be mobile-first, experimenting and developing unique UIs for both mobile and desktop is challenging. A mobile version will come soon, beautifully crafted to offer you the best experience. Please visit website from a laptop or a computer. I'm sorry for the inconvenience.</h1></div>
+            </div>
 
+<!-- DESKTOP -->
     <div id="desktopContainer" class="container-fluid home desktop row row-cols-1 row-cols-lg-3 g-4">
       <div class="col navigator-bar d-flex align-items-center"><h6>Scroll</h6></div>
       <div class="col main-content-home" id="mainContentHome">

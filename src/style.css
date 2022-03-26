@@ -206,15 +206,17 @@ ul {
   padding: 0;
 }
 
-.explore-section-desktop {
-  width: 15rem;
-  height: 15rem;
+.asset-post {
+  width: 14.6rem;
+  height: 14.6rem;
+  margin: 0;
 }
 
-.card-img {
-  width: 20rem;
-  height: 20rem;
+.card-img-index {
+  width: 14.6rem;
+  height: 14.6rem;
 }
+
 .work-section-heading {
   font-size: 72px;
   transform: translateY(3rem);
