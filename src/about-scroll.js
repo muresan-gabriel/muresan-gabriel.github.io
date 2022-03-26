@@ -11,7 +11,7 @@ var aboutText = [
   "I have a variety of work to showcase in my <a class='about-link' href='https://gabriel-muresan.netlify.app/portfolio/'>portfolio</a>.",
   "Currently, I am looking for internships and learning opportunities.",
   "I am experienced in Vanilla HTML / CSS / JS.",
-  "I worked with Bootstrap 5.1 for a while aswell.",
+  "I used Bootstrap 5.1 aswell to be familiar with UI frameworks.",
   "I am learning React.JS in the meantime.",
   "And I am familiarizing myself with other modern web technologies and frameworks.",
 ];
