@@ -1,33 +1,21 @@
-var workImage = document.getElementById("workImage");
-var postName = document.getElementById("postName");
-var stretchedLink = document.getElementById("stretchedLink");
-var postSectionScroll = document.getElementById("postSectionScroll");
+var aboutHeading = document.getElementById("aboutScrollContent");
 const desktopContainer = document.getElementById("desktopContainer");
 const displayContainer = document.getElementById("mainContentHome");
+
+var aboutText = [
+  "<a class='about-link' href='https://devlibproject.netlify.app/' target='_blank'>dev.lib</a> - Open Source Assets Platform",
+  "<a class='about-link' href='https://www.instagram.com/p/CEUm6NNllag/' target='_blank'>Șincai Centenary</a> - High School 100th Anniversary Logo",
+];
 var counter = 1;
 
-var portfolioSrc = [
-  "src/images/dev-lib-preview.png",
-  "src/images/centenary-logo.jpg",
-];
-var postHrefs = [
-  "https://devlibproject.netlify.app/",
-  "https://www.instagram.com/p/CEUm6NNllag/",
-];
-var postDisplayNames = ["dev.lib", "Șincai Centenary"];
-
 function change() {
-  postSectionScroll.classList.add("hidden");
+  aboutHeading.classList.add("hidden");
   setTimeout(function () {
-    workImage.src = portfolioSrc[counter];
-    stretchedLink.href = postHrefs[counter];
-    postName.innerHTML = postDisplayNames[counter];
-    postSectionScroll.classList.remove("hidden");
+    aboutHeading.innerHTML = aboutText[counter];
+    aboutHeading.classList.remove("hidden");
     counter++;
-    if (counter >= portfolioSrc.length) {
-      counter = 0;
-    }
-  }, 1000);
+    if (counter > aboutText.length - 1) counter = 0;
+  }, 500);
 }
 
 desktopContainer.addEventListener("wheel", change);

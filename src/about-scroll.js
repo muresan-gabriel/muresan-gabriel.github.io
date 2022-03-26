@@ -5,16 +5,21 @@ const displayContainer = document.getElementById("mainContentHome");
 var aboutText = [
   "Hello! I'm Gabriel.",
   "I'm a computer science student.",
-  "I'm also a graphic designer.",
+  "I'm also a freelance graphic designer.",
+  "At the moment, I work part-time at McDonald's as a Crew Trainer.",
   "I am continously learning new things about the web.",
-  "I am passionate and hard-working.",
+  "I have a variety of work to showcase in my <a class='about-link' href='https://gabriel-muresan.netlify.app/portfolio/'>portfolio</a>.",
   "Currently, I am looking for internships and learning opportunities.",
+  "I am experienced in Vanilla HTML / CSS / JS.",
+  "I worked with Bootstrap 5.1 for a while aswell.",
+  "I am learning React.JS in the meantime.",
+  "And I am familiarizing myself with other modern web technologies and frameworks.",
 ];
 var counter = 1;
 
 function displayEnd() {
   aboutHeading.innerHTML =
-    "Love what you're seeing?<br>Let's get in <a class='about-link' href='https://gabriel-muresan.netlify.app/contact/'>contact</a>.";
+    "Feel free to <a class='about-link' href='https://gabriel-muresan.netlify.app/contact/'>contact</a> me for freelance work.<br>Visit my <a class='about-link' href='https://gabriel-muresan.netlify.app/portfolio/'>portfolio</a> for more.";
 }
 
 function change() {
@@ -23,14 +28,10 @@ function change() {
     aboutHeading.innerHTML = aboutText[counter];
     aboutHeading.classList.remove("hidden");
     counter++;
-    if (counter >= aboutText.length + 1) {
+    if (counter > aboutText.length) {
       displayEnd();
-    }
+    } else desktopContainer.addEventListener("wheel", change, { once: true });
   }, 500);
 }
 
-if (counter <= aboutText.length + 1) {
-  desktopContainer.addEventListener("wheel", change);
-} else {
-  displayEnd();
-}
+desktopContainer.addEventListener("wheel", change, { once: true });

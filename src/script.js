@@ -1,5 +1,16 @@
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
+document.addEventListener(
+  "dragstart",
+  function (event) {
+    var img = new Image();
+    img.src =
+      "data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=";
+    event.dataTransfer.setDragImage(img, 0, 0);
+  },
+  false
+);
+
 window.scroll({
   top: 0,
   left: 0,
