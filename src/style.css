@@ -385,8 +385,30 @@ ul {
   color: #c2ff1b;
 }
 
-/* KEYFRAMES */
+@media only screen and (max-width: 1557px) {
+  .contact-display-font {
+    font-size: 45px;
+  }
+}
 
+@media only screen and (max-height: 845px) {
+  .social-icons-container {
+    transform: translateY(-2rem);
+  }
+}
+
+@media only screen and (max-height: 699px) {
+  .social-icons-container {
+    transform: translateY(-4rem);
+  }
+}
+@media only screen and (max-height: 552px) {
+  .social-icons-container {
+    transform: translateY(-6rem);
+  }
+}
+
+/* KEYFRAMES */
 @keyframes blinker {
   50% {
     border-color: rgba(255, 255, 255, 0);
@@ -401,5 +423,3 @@ ul {
     opacity: 1;
   }
 }
-
-/* TRANSITION BETWEEN PAGES */
