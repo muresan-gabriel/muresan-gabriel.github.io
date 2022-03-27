@@ -25,6 +25,29 @@
   <body>
     <!-- MOBILE NAVBAR -->
     <div class="container mobile col">
+      <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title mobile-heading" id="exampleModalLabel">Mobile version under development</h5>
+          </div>
+          <div class="modal-body">
+            As websites should always be mobile-first in terms of responsiveness and development, this portfolio's mobile version is currently under development.<br><br>
+            I want to craft an impeccable mobile experience for the users visiting this website, and such an experience requires thinking, planning and perfect execution.<br><br>
+            In the future you will be able to find a fantastic mobile experience, but until then I recommend using a desktop or a laptop to browse this website.<br><br>
+            Thank you for understanding.
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Understood</button>
+          </div>
+        </div>
+        </div>
+      </div>
+      <script>
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
+        myModal.show()
+      </script>
+  
         <div class="row ham-menu-container">
         <button class="btn shadow-none align-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="ham-menu" src="src/images/ham-menu.png"></button>
         </div>
@@ -60,11 +83,11 @@
             <div class="explore-section explore-section-desktop d-flex justify-content-center container-fluid row row-cols-1 g-4">
               <div class="col">
                 <h1 id="aboutScrollContent" class="main-display-font mobile-project">
-                <a class='mobile-link' href='https://devlibproject.netlify.app/' target="_blank">dev.lib</a> - Open Source Assets Platform</h1>
+                <a class='about-link mobile-link' href='https://devlibproject.netlify.app/' target="_blank">dev.lib</a> - Open Source Assets Platform</h1>
               </div>
               <div class="col">
                 <h1 id="aboutScrollContent" class="main-display-font mobile-project">
-                <a class='mobile-link' href='https://www.instagram.com/p/CEUm6NNllag/' target="_blank">Șincai Centenary</a> - 100th Anniversary of Șincai High School</h1>
+                <a class='about-link mobile-link' href='https://www.instagram.com/p/CEUm6NNllag/' target="_blank">Șincai Centenary</a> - 100th Anniversary of Șincai High School</h1>
               </div>
               </div>
           </div>
