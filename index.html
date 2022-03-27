@@ -45,7 +45,8 @@
       </div>
       <script>
         var myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
-        myModal.show()
+        if(window.screen.width < 1199)
+          myModal.show()
       </script>
   
         <div class="row ham-menu-container">
