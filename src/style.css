@@ -222,10 +222,10 @@ ul {
 }
 
 .work-section-heading {
-  font-size: 72px;
+  font-size: 48px;
   transform: translateY(3rem);
-  text-align: left;
-  margin-bottom: 0;
+  text-align: center;
+  margin-bottom: 15px;
   z-index: 25;
 }
 
@@ -264,6 +264,10 @@ ul {
   .wrap {
     font-size: 21px;
   }
+}
+
+.contact-mobile-cont {
+  transform: translateY(7rem);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -428,4 +432,13 @@ ul {
   100% {
     opacity: 1;
   }
+}
+
+.mobile-link {
+  font-size: calc(1rem + 1.5vw);
+}
+
+.mobile-project {
+  text-align: center;
+  font-size: calc(1rem + 1.5vw);
 }
