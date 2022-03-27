@@ -212,6 +212,10 @@ ul {
   margin: 0;
 }
 
+.li-icon {
+  filter: invert(1);
+}
+
 .card-img-index {
   width: 14.6rem;
   height: 14.6rem;
