@@ -398,6 +398,12 @@ ul {
   color: #c2ff1b;
 }
 
+@media only screen and (max-width: 1432px) {
+  .social-icon {
+    transform: translateX(-0.7rem) translateY(10rem);
+  }
+}
+
 @media only screen and (max-width: 1557px) {
   .contact-display-font {
     font-size: 45px;
@@ -408,15 +414,24 @@ ul {
   .social-icons-container {
     transform: translateY(-2rem);
   }
+  .icon-href {
+    transform: translateY(-2rem);
+  }
 }
 
 @media only screen and (max-height: 699px) {
   .social-icons-container {
     transform: translateY(-4rem);
   }
+  .icon-href {
+    transform: translateY(-4rem);
+  }
 }
 @media only screen and (max-height: 552px) {
   .social-icons-container {
+    transform: translateY(-6rem);
+  }
+  .icon-href {
     transform: translateY(-6rem);
   }
 }
