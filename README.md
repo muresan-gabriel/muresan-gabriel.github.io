@@ -110,7 +110,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Gabriel Mureșan - contact@gabrielmuresan.site
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/muresan-gabriel/muresan-gabriel.github.io/)
+Project Link: [https://github.com/muresan-gabriel/muresan-gabriel.github.io](https://github.com/muresan-gabriel/muresan-gabriel.github.io/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
