@@ -558,11 +558,11 @@ ul {
 }
 
 .nav-mobile-item {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .mobile-nav-container {
   position: fixed;
-  top: 25%;
+  top: 38%;
   text-align: right;
 }
