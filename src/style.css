@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap");
+
 @font-face {
   font-family: "Butler";
   src: url(/src/fonts/Butler_Ultra_Light.otf), format("otf");
@@ -34,6 +36,47 @@
   src: url(/src/fonts/Butler_Black.otf), format("otf");
   font-weight: 900;
 }
+
+/* MOBILE FONTFACE */
+
+@font-face {
+  font-family: "Butler";
+  src: url(/src/fonts/Butler_Ultra_Light.woff), format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Butler";
+  src: url(/src/fonts/Butler_Light.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Butler";
+  src: url(/src/fonts/Butler_Regular.woff), format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Butler";
+  src: url(/src/fonts/Butler_Medium.woff), format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Butler";
+  src: url(/src/fonts/Butler_Bold.woff), format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Butler";
+  src: url(/src/fonts/Butler_ExtraBold.woff), format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Butler";
+  src: url(/src/fonts/Butler_Black.woff), format("woff");
+  font-weight: 900;
+}
+
+/* MOBILE FONTFACE */
 
 .navbar-toggler {
   color: white;
@@ -474,3 +517,45 @@ ul {
 }
 
 /* MODAL */
+
+#loading {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0b0b0b;
+  transition: visibility 0s, opacity 0.5s linear;
+  opacity: 1;
+}
+
+.mobile {
+  height: 100vh;
+}
+
+.main-content-mobile-home::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+.mobile-nav-ul {
+  padding-left: 0;
+  margin: 25px;
+}
+
+.nav-mobile-item {
+  font-size: 14px;
+}
+
+.mobile-nav-container {
+  position: fixed;
+  top: 25%;
+  text-align: right;
+}

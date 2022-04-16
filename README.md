@@ -30,7 +30,7 @@
     <a href="https://github.com/muresan-gabriel/muresan-gabriel.github.io"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://gabrielmuresan.site/">View Demo</a>
+    <a href="https://gabrielmuresan.site/" target="_blank">Live Website</a>
     ·
     <a href="https://github.com/muresan-gabriel/muresan-gabriel.github.io/issues">Report Bug</a>
   </p>

@@ -20,32 +20,26 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="src/script.js" defer></script>
+    <script type="module" src="src/transition-modal.js"></script>
   </head>
   <body>
         <!-- MOBILE NAVBAR -->
         <div class="container mobile col">
-          <div class="row ham-menu-container">
-          <button class="btn shadow-none align-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="ham-menu" src="src/images/ham-menu.png"></button>
+  
+          <div class="mobile-nav-container container">
+            <ul class="mobile-nav-ul">
+              <li>
+                <a class="nav-mobile-item" href="portfolio.html">PORTFOLIO</a>
+              </li>
+              <li><a class="nav-mobile-item" href="about.html">ABOUT ME</a></li>
+              <li><a class="nav-mobile-item active-link" href="contact.html">CONTACT</a></li>
+            </ul>
           </div>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">
-              <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul>
-                  <li><a class="nav-item" href="index.html">Home</a></li>
-                  <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
-                  <li><a class="nav-item" href="about.html">About me</a></li>
-                  <li><a class="nav-item" href="contact.html">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col contact-mobile-cont">
-            <h1 id="aboutScrollContent" class="main-display-font mobile-project">
-              <a class='about-link mobile-link' href='mailto: contact@gabrielmuresan.site'>contact@gabrielmuresan.site</a>
-            </h1>
+      
+          <div class="container main-content-mobile-home">
           </div>
         </div>
+      
     
 <!-- DESKTOP -->
 <div class="container-fluid home desktop row row-cols-1 row-cols-lg-3 g-4">
@@ -95,5 +89,9 @@
     </div>
   </div>
 </div>
+<div id="loading">
+  <img id="loading-icon" height="128px" src="src/images/logo-03.svg">
+</div>
+<script src="src/transition-modal.js"></script>
   </body>
 </html>

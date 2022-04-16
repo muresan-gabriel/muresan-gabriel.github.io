@@ -19,85 +19,25 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="src/script.js" defer></script>
   </head>
 
   <body>
-    <!-- MOBILE NAVBAR -->
-    <div class="container mobile col">
-      <div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-          <h5 class="modal-title mobile-heading" id="exampleModalLabel">Mobile version under development</h5>
-          </div>
-          <div class="modal-body">
-            As websites should always be mobile-first in terms of responsiveness and development, this portfolio's mobile version is currently under development.<br><br>
-            I want to craft an impeccable mobile experience for the users visiting this website, and such an experience requires thinking, planning and perfect execution.<br><br>
-            In the future you will be able to find a fantastic mobile experience, but until then I recommend using a desktop or a laptop to browse this website.<br><br>
-            Thank you for understanding.
-          </div>
-          <div class="modal-footer">
-          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Understood</button>
-          </div>
-        </div>
-        </div>
-      </div>
-      <script>
-        let myModal = new bootstrap.Modal(document.getElementById('myModal'), {})
-        if(window.screen.width < 1199)
-          myModal.show()
-      </script>
+    <!-- MOBILE -->
+  <div class="container mobile col">
   
-        <div class="row ham-menu-container">
-        <button class="btn shadow-none align-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="ham-menu" src="src/images/ham-menu.png"></button>
-        </div>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div class="offcanvas-header">
-            <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul>
-                <li><a class="nav-item" href="index.html">Home</a></li>
-                <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
-                <li><a class="nav-item" href="about.html">About me</a></li>
-                <li><a class="nav-item" href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row"><h1 class="mobile-heading main-heading-mobile center">Gabriel Mureșan</h1></div>
-        <div class="row"><h1 class="mobile-heading center">I'm a</h1></div>
-        <div class="row"><h1 class="mobile-heading center">
-            <span
-              class="mobile-heading typewrite"
-              data-period="2000"
-              data-type='[ "front-end developer", "self-taught graphic designer", "computer science student" ]'
-            ></span
-            >
-            <span class="wrap mobile-heading"></span>
-          </h1></div>
-          <div class="row work-container-mobile">
-              <h1 class="work-section-heading mobile-heading center">Work</h1>
-          </div>
-          <!-- POST CONTAINER -->
-          <div class=" d-flex justify-content-center row">
-            <div class="explore-section explore-section-desktop d-flex justify-content-center container-fluid row row-cols-1 g-4">
-              <div class="col">
-                <h1 id="aboutScrollContent" class="main-display-font mobile-project">
-                <a class='about-link mobile-link' href='https://devlibproject.netlify.app/' target="_blank">dev.lib</a> - Open Source Assets Platform</h1>
-              </div>
-              <div class="col">
-                <h1 id="aboutScrollContent" class="main-display-font mobile-project">
-                <a class='about-link mobile-link' href='https://www.instagram.com/p/CEUm6NNllag/' target="_blank">Șincai Centenary</a> - 100th Anniversary of Șincai High School</h1>
-              </div>
-              </div>
-          </div>
-          <div class="d-flex justify-content-center container-fluid g-4">
-
-            <div class="row"><button class="btn btn-outline-primary shadow-none" onclick="window.location.href='https://gabriel-muresan.netlify.app/portfolio'">Portfolio</button></div>
-
-          </div>
+    <div class="mobile-nav-container container">
+      <ul class="mobile-nav-ul">
+        <li>
+          <a class="nav-mobile-item" href="portfolio.html">PORTFOLIO</a>
+        </li>
+        <li><a class="nav-mobile-item" href="about.html">ABOUT ME</a></li>
+        <li><a class="nav-mobile-item" href="contact.html">CONTACT</a></li>
+      </ul>
     </div>
+
+    <div class="container main-content-mobile-home">
+    </div>
+  </div>
 
 
 <!-- DESKTOP -->
@@ -152,9 +92,14 @@
         <div class="col"><a class=icon-href" href="https://dribbble.com/muresangabriel" target="_blank"
             ><img class="social-icon" src="/src/icons/dribbble.png"
           /></a>
-        </div>
+        </div> 
         </div>
       </div>
     </div>
+            <div id="loading">
+          <img id="loading-icon" height="128px" src="src/images/logo-03.svg">
+        </div>
+        <script type="module" src="src/script.js" defer></script>
+      <script src="src/transition-modal.js"></script>
   </body>
 </html>

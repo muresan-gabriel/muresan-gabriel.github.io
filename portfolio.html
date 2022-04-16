@@ -21,47 +21,26 @@
     ></script>
     <script type="module" src="src/script.js" defer></script>
     <script type="module" src="src/portfolio-scroll.js" defer></script>
+    <script type="module" src="src/transition-modal.js" defer></script>
   </head>
   <body>
             <!-- MOBILE NAVBAR -->
             <div class="container mobile col">
-              <div class="row ham-menu-container">
-              <button class="btn shadow-none align-right" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="ham-menu" src="src/images/ham-menu.png"></button>
+  
+              <div class="mobile-nav-container container">
+                <ul class="mobile-nav-ul">
+                  <li>
+                    <a class="nav-mobile-item active-link" href="portfolio.html">PORTFOLIO</a>
+                  </li>
+                  <li><a class="nav-mobile-item" href="about.html">ABOUT ME</a></li>
+                  <li><a class="nav-mobile-item" href="contact.html">CONTACT</a></li>
+                </ul>
               </div>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                  <button type="button" class="btn-close text-reset shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul>
-                      <li><a class="nav-item" href="index.html">Home</a></li>
-                      <li><a class="nav-item" href="portfolio.html">Portfolio</a></li>
-                      <li><a class="nav-item" href="about.html">About me</a></li>
-                      <li><a class="nav-item" href="contact.html">Contact</a></li>
-                  </ul>
-                </div>
+          
+              <div class="container main-content-mobile-home">
               </div>
-              <div class="row work-container-mobile">
-                <h1 class="work-section-heading mobile-heading center">Work</h1>
             </div>
-            <!-- POST CONTAINER -->
-            <div class=" d-flex justify-content-center row">
-              <div class="explore-section explore-section-desktop d-flex justify-content-center container-fluid row row-cols-1 g-4">
-                <div class="col">
-                  <h1 class="main-display-font mobile-project">
-                  <a class='about-link mobile-link' href='https://devlibproject.netlify.app/' target="_blank">dev.lib</a> - Open Source Assets Platform</h1>
-                </div>
-                <div class="col">
-                  <h1 class="main-display-font mobile-project">
-                  <a class='about-link mobile-link' href='https://www.instagram.com/p/CEUm6NNllag/' target="_blank">Șincai Centenary</a> - 100th Anniversary of Șincai High School</h1>
-                </div>
-                <div class="col">
-                  <h1 class="main-display-font mobile-project">
-                  <a class='about-link mobile-link' href='https://gabriel-muresan.netlify.app/contact'>Contact</a> me for freelance work.</h1>
-                </div>
-                </div>
-            </div>
-            </div>
+          
 
 <!-- DESKTOP -->
     <div id="desktopContainer" class="container-fluid home desktop row row-cols-1 row-cols-lg-3 g-4">
@@ -110,6 +89,9 @@
         </div>
       </div>
     </div>
-
+    <div id="loading">
+      <img id="loading-icon" height="128px" src="src/images/logo-03.svg">
+    </div>
+    <script src="src/transition-modal.js"></script>
   </body>
 </html>

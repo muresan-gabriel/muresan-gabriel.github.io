@@ -5,21 +5,17 @@ const displayContainer = document.getElementById("mainContentHome");
 var aboutText = [
   "Hello! I'm Gabriel.",
   "I'm a computer science student.",
-  "I'm also a freelance graphic designer.",
-  "At the moment, I work part-time at McDonald's as a Crew Trainer.",
-  "I am continously learning new things about the web.",
+  "I'm also a self-taught graphic designer.",
+  "My goal is to craft fantastic web experiences.",
+  "I am experienced in UI/UX, graphic design and front-end development.",
   "I have a variety of work to showcase in my <a class='about-link' href='https://gabriel-muresan.netlify.app/portfolio/'>portfolio</a>.",
-  "Currently, I am looking for internships and learning opportunities.",
-  "I am experienced in Vanilla HTML / CSS / JS.",
-  "I used Bootstrap 5.1 aswell to be familiar with UI frameworks.",
-  "I am learning React.JS in the meantime.",
-  "And I am familiarizing myself with other modern web technologies and frameworks.",
+  "Currently, I am looking for internships, learning opportunities and fantastic projects to work on.",
 ];
 var counter = 1;
 
 function displayEnd() {
   aboutHeading.innerHTML =
-    "Feel free to <a class='about-link' href='https://gabriel-muresan.netlify.app/contact/'>contact</a> me for freelance work.<br>Visit my <a class='about-link' href='https://gabriel-muresan.netlify.app/portfolio/'>portfolio</a> for more.";
+    "Got a great project in mind? <br>Let's get in <a class='about-link' href='https://gabriel-muresan.netlify.app/contact/'>contact</a>.<br>Visit my <a class='about-link' href='https://gabriel-muresan.netlify.app/portfolio/'>portfolio</a> for more.";
 }
 
 function change() {
