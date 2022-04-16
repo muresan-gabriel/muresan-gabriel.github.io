@@ -453,7 +453,7 @@ ul {
   }
 }
 
-@media only screen and (max-height: 845px) {
+@media only screen and (max-width: 1200px) {
   * {
     overflow: hidden;
   }
@@ -463,7 +463,6 @@ ul {
 
   /* Hide scrollbar for IE, Edge and Firefox */
   * {
-    -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
 }
