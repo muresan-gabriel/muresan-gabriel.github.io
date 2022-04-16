@@ -532,10 +532,6 @@ ul {
   opacity: 1;
 }
 
-.mobile {
-  height: 100vh;
-}
-
 .main-content-mobile-home::-webkit-scrollbar {
   display: none;
 }
