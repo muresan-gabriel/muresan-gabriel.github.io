@@ -457,6 +457,15 @@ ul {
   * {
     overflow: hidden;
   }
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 @media only screen and (max-height: 845px) {
   .social-icons-container {
