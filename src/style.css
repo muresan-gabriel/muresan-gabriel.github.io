@@ -465,6 +465,20 @@ ul {
   * {
     scrollbar-width: none; /* Firefox */
   }
+
+  #loading {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #0b0b0b;
+    transition: visibility 0s, opacity 0.5s linear;
+    opacity: 1;
+  }
 }
 @media only screen and (max-height: 845px) {
   .social-icons-container {
