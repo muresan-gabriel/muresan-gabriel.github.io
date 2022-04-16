@@ -466,6 +466,11 @@ ul {
     scrollbar-width: none; /* Firefox */
   }
 
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+  }
+
   #loading {
     display: flex;
     position: absolute;
