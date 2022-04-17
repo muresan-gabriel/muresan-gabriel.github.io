@@ -606,6 +606,33 @@ ul {
   text-align: left;
 }
 
+.description-mobile-about {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  position: fixed;
+  top: 27%;
+  text-align: left;
+}
+
+.description-mobile-contact {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  position: fixed;
+  top: 45.7%;
+  text-align: left;
+}
+
+.description-mobile-portfolio {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  position: fixed;
+  top: 44.5%;
+  text-align: left;
+}
+
 .main-content-mobile-home {
   margin: 0;
   padding: 0;
@@ -628,4 +655,8 @@ ul {
   .social-icons-mobile {
     margin-top: 67vh;
   }
+}
+
+.mail-href-mobile {
+  font-size: 14px;
 }
