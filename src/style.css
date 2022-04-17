@@ -620,7 +620,7 @@ ul {
   font-family: "Montserrat", sans-serif;
   line-height: 1.4;
   position: fixed;
-  top: 45.7%;
+  top: 43%;
   text-align: left;
 }
 
@@ -658,5 +658,35 @@ ul {
 }
 
 .mail-href-mobile {
-  font-size: 14px;
+  font-size: 12px;
+}
+
+@media only screen and (max-height: 775px) {
+  .description-mobile-contact {
+    top: 43.5%;
+  }
+}
+
+@media only screen and (max-height: 708px) {
+  .description-mobile-contact {
+    top: 44%;
+  }
+}
+
+@media only screen and (max-height: 667px) {
+  .description-mobile-contact {
+    top: 44.5%;
+  }
+}
+
+@media only screen and (max-height: 572px) {
+  .description-mobile-contact {
+    top: 45%;
+  }
+}
+
+@media only screen and (max-height: 537px) {
+  .description-mobile-contact {
+    top: 45.5%;
+  }
 }
