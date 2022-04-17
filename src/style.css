@@ -621,11 +621,11 @@ ul {
 }
 
 .social-icons-mobile {
-  margin-top: 75vh;
+  margin-top: 77vh;
 }
 
 @media only screen and (max-height: 792px) and (min-width: 372px) and (max-width: 1200px) {
   .social-icons-mobile {
-    margin-top: 65vh;
+    margin-top: 67vh;
   }
 } ;
