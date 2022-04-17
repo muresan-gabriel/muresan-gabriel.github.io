@@ -523,7 +523,6 @@ ul {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
   background-color: #0b0b0b;
   transition: visibility 0s, opacity 0.5s linear;
   opacity: 1;
