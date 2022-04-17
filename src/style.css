@@ -614,3 +614,18 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+.icon-mobile {
+  height: 24px;
+  margin: 8px;
+}
+
+.social-icons-mobile {
+  margin-top: 80vh;
+}
+
+@media only screen and (max-height: 792px) and (min-width: 372px) and (max-width: 1200px) {
+  .social-icons-mobile {
+    margin-top: 70vh;
+  }
+} ;
