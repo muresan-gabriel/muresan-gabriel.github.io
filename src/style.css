@@ -596,10 +596,12 @@ ul {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   line-height: 1.4;
+  position: fixed;
+  top: 38%;
+  text-align: left;
 }
 
 .main-content-mobile-home {
   margin: 0;
   padding: 0;
-  height: 83vh;
 }
