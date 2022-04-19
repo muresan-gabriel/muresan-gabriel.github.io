@@ -81,7 +81,7 @@ Currently, the project isn't built using major technologies.
 
 - [x] Develop first version of the website
 - [x] Fix media queries and issues
-- [ ] Create mobile version of the website
+- [x] Create mobile version of the website
 - [ ] Convert the website to a SPA made using Vanilla JS
 - [ ] Multi-language Support
   - [x] English
