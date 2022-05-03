@@ -18,7 +18,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://gabrielmuresan.site/">
+  <a href="https://muresan-gabriel.github.io/">
     <img src="src/images/logo-03.svg" alt="Logo" width="140" height="140">
   </a>
 
@@ -30,7 +30,7 @@
     <a href="https://github.com/muresan-gabriel/muresan-gabriel.github.io"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://gabrielmuresan.site/" target="_blank">Live Website</a>
+    <a href="https://muresan-gabriel.github.io/" target="_blank">Live Website</a>
     ·
     <a href="https://github.com/muresan-gabriel/muresan-gabriel.github.io/issues">Report Bug</a>
   </p>
@@ -67,11 +67,9 @@ While creating something from scratch is extremely fun, it's a big responsabilit
 
 ### Built With
 
-Currently, the project isn't built using major technologies.
-
-- [Vanilla JS](https://www.javascript.com/)
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -82,13 +80,14 @@ Currently, the project isn't built using major technologies.
 - [x] Develop first version of the website
 - [x] Fix media queries and issues
 - [x] Create mobile version of the website
-- [ ] Convert the website to a SPA made using Vanilla JS
-- [ ] Multi-language Support
+- [ ] ~~Convert the website to a SPA made using Vanilla JS~~
+- [ ] ~~Multi-language Support~~
   - [x] English
-  - [ ] Romanian
-- [ ] Convert the website to a SPA made using React.JS
+  - [ ] ~~Romanian~~
+- [x] Convert the website to a SPA made using React.JS
 
-See the [open issues](https://github.com/muresan-gabriel/muresan-gabriel.github.io/issues) for a full list of proposed features (and known issues).
+This website is unused. To see the new version of the website, follow [this link](https://gabrielmuresan.site/)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
